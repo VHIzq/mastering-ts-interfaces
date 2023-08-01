@@ -6,7 +6,6 @@ enum Power  {
   Devices
 }
 
-
 abstract class Hero {
   constructor(
     public nickName: string,
@@ -22,6 +21,14 @@ abstract class Hero {
 
 
 class FullTimeHero extends Hero {
+  constructor(
+    public nickName: string,
+    public power: number,
+    private address: string
+  ) {
+    super(nickName, power)
+  }
+
   savePeople(): string {
     return 'Save 1K Citizens from that bomb explotion';
   }
