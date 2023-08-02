@@ -18,6 +18,12 @@
         }
     }
     class FullTimeHero extends Hero {
+        constructor(nickName, power, address) {
+            super(nickName, power);
+            this.nickName = nickName;
+            this.power = power;
+            this.address = address;
+        }
         savePeople() {
             return 'Save 1K Citizens from that bomb explotion';
         }
