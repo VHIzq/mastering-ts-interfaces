@@ -1,7 +1,10 @@
 "use strict";
 //*multiples generic types
 function merge(object1, object2) {
-    return Object.assign(Object.assign({}, object1), object2);
+    return {
+        ...object1,
+        ...object2
+    };
 }
 const comboObj = merge({ name: 'Robin' }, { pets: [18, 8] });
 // Can type parameters as a generic type or with an interface
