@@ -35,7 +35,7 @@ const joey = new Duelist('Joey', 'Wheeler', 'Red Eyes Dragon'); */
       return `${this.firstName} ${this.lastName}`;
     }
 
-    get objectMillemium() {
+    get objectMillenium() {
       return this._hasMilleniumObject;
     }
 
@@ -54,13 +54,13 @@ const joey = new Duelist('Joey', 'Wheeler', 'Red Eyes Dragon'); */
     }
   }
 
-  const joey = new Duelist('Joey', 'Wheeler', 4, 'RED', false);
+  const joey = new Duelist("Joey", "Wheeler", 4, "RED", false);
   console.log(joey);
 
   console.log(joey.fullName);
-  console.log(joey.objectMillemium);
+  console.log(joey.objectMillenium);
 
-  const yugi = new Duelist('Yugi', 'Moto', 9, 'BM', true);
+  const yugi = new Duelist("Yugi", "Moto", 9, "BM", true);
   console.log(yugi);
-  console.log(yugi.objectMillemium);
+  console.log(yugi.objectMillenium);
 })();
